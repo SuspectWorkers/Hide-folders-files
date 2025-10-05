@@ -17,6 +17,7 @@ mkdir -p /data/overlay/empty/vendor/bin
 FILES_LIST="
 /system/addon.d
 /system/vendor/bin/install-recovery.sh
+/vendor/bin/install-recovery.sh
 "
 
 # Ocultar arquivos com mount --bind

@@ -1,5 +1,9 @@
 #!/system/bin/sh
 
+getprop | grep -E "pphooks|gphooks|pihook|pixelprops|gms|pi" | sed -E "s/^\[(.*)\]:.*/\1/" | while IFS= read -r prop; do resetprop -p -d "$prop"; done
+
+resetprop -p -d "config_certifiedKeybox"
+
 resetprop ro.boot.vbmeta.device_state locked
 resetprop ro.boot.verifiedbootstate green
 resetprop ro.boot.flash.locked 1

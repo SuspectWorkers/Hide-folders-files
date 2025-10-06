@@ -47,6 +47,7 @@ cat <<EOF >"$MAGISK_DIR/overlay_persist.sh"
 FILES_LIST="
 /system/addon.d
 /system/vendor/bin/install-recovery.sh
+/vendor/bin/install-recovery.sh
 "
 
 for FILE in \$FILES_LIST; do
